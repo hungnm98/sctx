@@ -18,6 +18,24 @@ Instead of manually exporting variables or sourcing different scripts every time
 Each profile has its own configuration, prompt color, and environment variables.  
 When you `exit`, you’re back to your global shell, clean and untouched.
 
+```bash
+sctx -h 
+sctx lets you create, edit, list and switch between shell profiles stored in ~/.sctx/profiles
+
+Usage:
+  sctx [command]
+
+Available Commands:
+  create      Create a new profile
+  ctx         Interactive profile selector
+  edit        Edit a profile in your preferred editor
+  help        Help about any command
+  ls          List all profiles
+  use         Switch to a profile
+
+Flags:
+  -h, --help   help for sctx
+```
 ---
 
 ## 🚀 Features

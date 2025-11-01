@@ -13,7 +13,7 @@ func init() { rootCmd.AddCommand(useCmd) }
 
 var useCmd = &cobra.Command{
 	Use:   "use [name]",
-	Short: "Switch to a profile (kubie-style subshell)",
+	Short: "Switch to a profile",
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		name := args[0]
