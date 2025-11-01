@@ -1,6 +1,6 @@
 # Project info
 APP := sctx
-VERSION := 0.3.0
+VERSION := 0.3.1
 DIST := dist
 
 # Default build
@@ -30,7 +30,7 @@ release:
 	@echo "✅ All binaries built and compressed in $(DIST)/"
 
 # GitHub Release (requires GitHub CLI)
-# Usage: make gh-release VERSION=0.3.0
+# Usage: make gh-release VERSION=0.3.1
 gh-release: release
 	@echo "📦 Creating GitHub release v$(VERSION)..."
 	gh release create v$(VERSION) \
@@ -50,5 +50,5 @@ tag:
 	@echo "🏷️  Tag v$(VERSION) pushed."
 
 # Convenience target: tag + release + publish
-publish: tag gh-release
+publish: release tag gh-release
 	@echo "🚀 Published $(APP) v$(VERSION)!"

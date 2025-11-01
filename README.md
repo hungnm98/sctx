@@ -60,7 +60,7 @@ Download the latest prebuilt binary for your platform:
 Example for macOS (Apple Silicon):
 
 ```bash
-curl -fsSL https://github.com/hungnm98/sctx/releases/download/v0.3.0/install.sh | bash
+curl -fsSL https://github.com/hungnm98/sctx/releases/download/v0.3.1/install.sh | bash
 
 # Reload your shell
 source ~/.zshrc

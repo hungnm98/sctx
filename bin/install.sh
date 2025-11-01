@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-VERSION=${VERSION:-"0.3.0"}
+VERSION=${VERSION:-"0.3.1"}
 REPO="hungnm98/sctx"
 INSTALL_DIR="$HOME/.sctx/bin"
 
